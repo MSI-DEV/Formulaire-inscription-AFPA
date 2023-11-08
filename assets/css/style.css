@@ -1,0 +1,102 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+}
+
+header {
+  text-align: center;
+  background-color: #9d9c9c;
+}
+header h1 {
+  font-size: xx-large;
+}
+header h1 h2 {
+  font-size: large;
+}
+
+h3 {
+  text-align: center;
+  color: maroon;
+  font-size: xx-large;
+}
+
+fieldset {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 14rem;
+}
+fieldset form {
+  text-align: center;
+}
+
+.suggestion {
+  border: solid 1px gray;
+}
+
+#suggestions_facturation {
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: aqua;
+}
+#suggestions_facturation #suggestions_livraison {
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: aqua;
+}
+
+input {
+  border-top: none;
+  margin-bottom: 1rem;
+}
+
+#bouton-formulaire {
+  margin-left: 46%;
+  margin-top: 1rem;
+  width: 10%;
+  height: 3rem;
+  border-radius: 5px;
+  border: solid 1px gray;
+}
+
+input#prenom {
+  margin-right: 1rem;
+}
+
+input#nom, input#rueFacturation, input#villeFacturation {
+  margin-left: 0.4rem;
+}
+
+input#email {
+  margin-right: 0.4rem;
+}
+
+input#codePostalFacturation {
+  margin-right: 3.1rem;
+}
+
+input#rueLivraison, input#villeLivraison {
+  margin-left: 0.3rem;
+}
+
+input#codePostalLivraison {
+  margin-right: 3.2rem;
+}
+
+footer {
+  background-color: gray;
+  height: 4rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+footer p {
+  color: red;
+  text-align: center;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

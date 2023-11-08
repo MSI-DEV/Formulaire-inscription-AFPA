@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="module" src="../assets/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Formulaire d'inscription</title>
 </head>
 <body>
+<header>
+    <h1>Code of the Day</h1>
+    <h2>Le quotidien des développeurs en herbe !</h2>
+    <main>    
+        <nav>
+            <p>Bienvenue sur le portail d'inscription à notre liste d'abonnement</p>
+            <p>Ici vous pourrez demander à ce que votre journal préféré vous soit livré chaque jour</p>
+            <p>Dès que nos équipes recevront votre demande, vous serez contacté par courrier électronique</p>
+        </nav>
     
+</header>
+<h3>Formulaire d'inscription</h3>
+<fieldset>
+    <legend>Identité</legend>
+    <form>
+        <label>
+            <input type="radio" name="genre" value="monsieur" checked> Monsieur
+        </label>
+        <label>
+            <input type="radio" name="genre" value="madame"> Madame 
+        </label>
+    </form>
+    <label>
+        Nom: <input type="text" name="nom" id="nom">
+    </label>
+    <label>
+        Prénom: <input type="text" name="prenom" id="prenom">
+    </label>
+    <label>
+        E-mail: <input type="email" name="email" id="email">
+    </label>   
+</fieldset>
+<fieldset>
+    <legend>Adresse de facturation</legend>
+    <label>Rue:
+    <input type="text" name="rueFacturation" id="rueFacturation"></label>
+    <div id="suggestions_facturation"></div>
+    <label>Ville:
+    <input type="text" name="villeFacturation" id="villeFacturation"></label>
+    <label>Code postal:
+    <input type="text" name="codePostalFacturation" id="codePostalFacturation"></label>
+</fieldset>
+<fieldset>
+    <legend>Adresse de livraison</legend>
+    <label>Rue:
+    <input type="text" name="rueLivraison" id="rueLivraison"></label>
+    <div id="suggestions_livraison"></div>
+    <label>Ville:
+    <input type="text" name="villeLivraison" id="villeLivraison"></label>
+    <label>Code postal:
+    <input type="text" name="codePostalLivraison" id="codePostalLivraison"></label>
+    
+</fieldset>
+<button id="bouton-formulaire"> Valider</button>
+</main>
+<footer>
+    
+        <p>Mathieu FREMONT - @Code of the day - 2023</p>
+    </div>
+</footer> 
 </body>
 </html>
